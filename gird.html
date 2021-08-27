@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+  #grid{
+    border: 5px solid pink;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+  }
+  div #a, #b, #c{
+    border: 5px solid gray;
+  }
+  #b {
+ 	/* 1번 라인에서 2칸 */
+  grid-column: 2 / 3;
+  	grid-row: 1 / 3;
+ }
+  </style>
+</head>
+  <body>
+    <div id="grid">
+    <div id="a">a </div>
+    <div id="b">b</div>
+    <div id="c">c</div>
+    </div>
+  </body>
+</html>
